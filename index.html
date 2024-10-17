@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language translator project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="container-title">Language Translator</h1>
+      <form id="form-translate" class="translate-form">
+        <div class="form-group">
+          <label for="title">From:</label>
+          <select id="from" class="countries"></select>
+        </div>
+        <div class="form-group">
+          <label for="title">To:</label>
+          <select id="to" class="countries"></select>
+        </div>
+        <div class="form-group">
+          <label for="translate">Text to translate</label>
+
+          <textarea
+            name="translator"
+            id="textToTranslate"
+            rows="8"
+            cols="4"
+          ></textarea>
+        </div>
+        <button id="translate" type="submit">Translate</button>
+
+        <h2>Translated Text</h2>
+        <div id="translateContainer"></div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
